@@ -206,9 +206,9 @@ main { max-width: var(--wrap); margin: 0 auto; padding: 0 var(--gut); }
 html, body, h1, h2, h3, p, li { hyphens: none; -webkit-hyphens: none; }
 .nw { white-space: nowrap; }
 html, body { overflow-x: clip; }
-/* первый экран: фото бокса с прозрачностью .4 (дефолт шаблона .3, постоянное правило Сергея 13.11.2026), затемнение только под текстом слева и внизу */
+/* первый экран: фото бокса с прозрачностью .5 (по просьбе Сергея 13.11.2026 для №6; общее правило .4), затемнение только под текстом слева и внизу */
 .s-hero__bg { height: min(94%, 780px); }
-.s-hero__bg img { opacity: .4; filter: saturate(1.05); object-position: 50% 50%; }
+.s-hero__bg img { opacity: .5; filter: saturate(1.05); object-position: 50% 50%; }
 .s-hero__bg::after { background:
   linear-gradient(90deg, color-mix(in srgb, var(--c-canvas) 55%, transparent) 0%, color-mix(in srgb, var(--c-canvas) 36%, transparent) 30%, color-mix(in srgb, var(--c-canvas) 6%, transparent) 54%, transparent 66%),
   linear-gradient(180deg, transparent 0%, transparent 70%, var(--c-canvas) 100%); }
